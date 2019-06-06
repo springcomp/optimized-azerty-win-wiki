@@ -18,11 +18,14 @@ In order to create a new release, please follow the steps outlined here:
 
 2. This will trigger a new build and create a new release on the [Releases](https://github.com/springcomp/optimized-azerty-win/releases) page.
 
-3. Move the french documentation notice from the previous release to the current release.
+3. Move the french documentation notice from the previous release to the current release.  
+   Or copy the following fragment:  
+   ![](refs/french.png) Veuillez consulter la [procédure d’installation détaillée](https://springcomp.github.io/optimized-azerty-win/download.html).
 
 ## Updating the Documentation
 
-4. Copy the link to the `setup.zip` release asset in the Windows clipboard.
-5. Use [Bitly](https://bitly.com/) or another service to shorten the copied URL.
-6. Modify the `download.md` file in the `gh-pages` documentation branch, to update the download link from the PowerShell sample download instructions.
-7. Push those updated changes to the `gh-pages` branch.
+1. Copy the link to the `setup.zip` release asset to the Windows clipboard.
+2. Use [Bitly](https://bitly.com/) or another service to shorten the copied URL.
+3. Checkout the `gh-pages` branch.
+4. Modify the `download.md` file in the `gh-pages` documentation branch, to update the download link from the PowerShell sample download instructions.
+5. Push those updated changes to the `gh-pages` branch.
