@@ -1,5 +1,3 @@
-# Creating a new Release
-
 This repository uses [AppVeyor](https://ci.appveyor.com/project/springcomp/optimized-azerty-win) continuous integration to build and package artifacts that must be published on each new release. The release and its assets are created automatically with the correct version.
 
 The release must now be modified to include:
