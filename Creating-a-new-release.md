@@ -1,3 +1,9 @@
+## Developing a new release
+
+The installer package has been replaced with our own implementation, albeit reusing the Windows Installer Custom Actions DLL that ships with MSKLC. The installer package is authored using WiX. Please, make sure to update the package version according to the detailed instructions at the top of the [product.wxs](https://github.com/springcomp/optimized-azerty-win/blob/master/src/Package_x86/Product.wxs) file.
+
+## Publishing a new release
+
 This repository uses [AppVeyor](https://ci.appveyor.com/project/springcomp/optimized-azerty-win) continuous integration to build and package artifacts that must be published on each new release. The release and its assets are created automatically with the correct version.
 
 The release must now be modified to include:
@@ -8,7 +14,7 @@ The release must now be modified to include:
 
 The documentation pages must also be updated to refer to the new `setup.zip` download.
 
-## Updating the Release
+### Updating the Release
 
 In order to create a new release, please follow the steps outlined here:
 
@@ -23,7 +29,7 @@ In order to create a new release, please follow the steps outlined here:
    Or copy the following fragment:  
    ![](refs/french.png) Veuillez consulter la [procédure d’installation détaillée](https://springcomp.github.io/optimized-azerty-win/download.html).
 
-## Updating the Documentation
+### Updating the Documentation
 
 1. Copy the link to the `setup.zip` release asset to the Windows clipboard.
 2. Use [Bitly](https://bitly.com/) or another service to shorten the copied URL.
