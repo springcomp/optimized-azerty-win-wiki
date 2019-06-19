@@ -47,7 +47,7 @@ For these reasons, this repository comes with its own set of projects to create 
 
 As an added benefit, it is very easy to inject the current build version number in while compiling the setup packages.
 
-### Custom Actions
+### Reusing MSKLC Custom Actions
 
 One challenge, however, is to be able to register the keyboard and add to the _Language Bar_ the layout(s) upon installation, and conversely, to remove the layout(s) from the _Language Bar_ and unregister them from Windows® upon uninstallation.
 
