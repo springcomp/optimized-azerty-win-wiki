@@ -13,4 +13,10 @@ MSKLC is a high level graphical front-end application that allows to author a ke
 
 ### Creation of the keyboard layout DLL
 
+Before starting the build proper, [a private Docker image](https://github.com/springcomp/optimized-azerty-win/blob/dd8448402c373365462d5d99b0d9581d83002989/appveyor.yml#L17) is created each time the build starts. The private image is based upon a custom but [publically available](https://hub.docker.com/r/springcompdocker/msklc) image that hosts the MSKLC distribution.
+
 For practical reasons, the main keyboard layout source file is encoded in UTF-8 for better support in Git and development tools (e.g _diff_ and _merge_ tools). `kbdutool`, however, works best with UTF-16LE encoded files. Therefore, the first step of the build is to [create a copy of the `.klc` file in Unicode](https://github.com/springcomp/optimized-azerty-win/blob/dd8448402c373365462d5d99b0d9581d83002989/appveyor.yml#L20).
+
+The resulting copy is stored in the `src` folder which is used as [a shared filesystem folder](https://github.com/springcomp/optimized-azerty-win/blob/dd8448402c373365462d5d99b0d9581d83002989/appveyor.yml#L25) for the Docker image that builds the keyboard layout DLL.
+
+MSKLC itself does not lend itself well to automation. However, its low-level counterpart, `kbdutool` is a console program an can be used to create the C source code files from the `.klc` layout file.
