@@ -36,3 +36,5 @@ Left to its own devices, `kbdutool` only ever produces a resulting DLL with the 
 To compile the actual keyboard layout DLL, `kbdutool` is invoked multiple times, each of which corresponds to a target CPU architecture. While, by default, MSKLC builds four target DLLs, only the __x86__ and __x64__ variants are in common use today on Windows®.
 
 However, once invoked, `kbdutool` produces the desired layout DLL and then _deletes_ the C source code files! To prevent that, the build [first protect the files in read-only mode](https://github.com/springcomp/optimized-azerty-win/blob/master/context/Make-KeyboardLayout.ps1#L74-L82), then invokes multiple compilations of the keyboard layout DLL − for different CPU architectures − and then restore the read-write mode on the files (mostly, for symmetry reasons).
+
+The resulting keyboard layout DLLs are compiled directly to their corresponding folder, in the source code for the __x86__ and __x64__ variants of the [Windows Installer XML (WiX) Toolset](https://wixtoolset.org/releases/) setup package projects.
