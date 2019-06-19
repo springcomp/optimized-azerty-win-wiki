@@ -37,4 +37,4 @@ To compile the actual keyboard layout DLL, `kbdutool` is invoked multiple times,
 
 However, once invoked, `kbdutool` produces the desired layout DLL and then _deletes_ the C source code files! To prevent that, the build [first protect the files in read-only mode](https://github.com/springcomp/optimized-azerty-win/blob/master/context/Make-KeyboardLayout.ps1#L74-L82), then invokes multiple compilations of the keyboard layout DLL − for different CPU architectures − and then restore the read-write mode on the files (mostly, for symmetry reasons).
 
-The resulting keyboard layout DLLs are compiled directly to their corresponding folder, in the source code for the __x86__ and __x64__ variants of the [Windows Installer XML (WiX) Toolset](https://wixtoolset.org/releases/) setup package projects.
+The resulting keyboard layout DLLs are compiled and [copied to their corresponding folder](https://github.com/springcomp/optimized-azerty-win/blob/master/context/Make-KeyboardLayout.ps1#L44), in the source code for the __x86__ and __x64__ variants of the [Windows Installer XML (WiX) Toolset](https://wixtoolset.org/releases/) setup package projects.
