@@ -14,6 +14,8 @@ The following keyboard shortcuts no longer work:
 
 ## Microsoft Office
 
-In most Office apps, it is impossible to type an `_` (underscore) character in the _backstage_ area. For instance. in the `Save As` screen, it is impossible to type an `_` when typing the new name under which the document must be saved as. This is because typing an `_` conflicts with the <kbd>AltGr</kbd>+<kbd>8</kbd> keyboard shortcut.
+In most Office apps, it is impossible to type an `_` (underscore) character in the _backstage_ area.
+
+For instance. in the `Save As` screen, it is impossible to type an `_` when typing the new name under which the document must be saved as. This is because typing an `_` conflicts with the <kbd>AltGr</kbd>+<kbd>8</kbd> keyboard shortcut.
 
 ![image](https://user-images.githubusercontent.com/8488398/71819285-bbf1e100-308b-11ea-9984-839f6fdbc178.png)
