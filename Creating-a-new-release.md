@@ -20,7 +20,7 @@ In order to create a new release, please follow the steps outlined here:
 
 1. Push a version tag to the current HEAD of the `master` branch.  
    Use a version tag with the following format: v _M_._m_._x_._y_.  
-   `git tag v1.2.0.0 master` __important__: make sure to specify the base ref branch `master`.  
+   `git tag v1.2.0.0 master` __important__: make sure to specify the base ref branch `main`.  
    `git push --tags origin`
 
 2. This will trigger a new build and create a new release on the [Releases](https://github.com/springcomp/optimized-azerty-win/releases) page.
