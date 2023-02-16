@@ -1,5 +1,5 @@
 - [How-to know which version of the AZERTY-NF layout is currently installed?](#which-version)
-- [How-to know which version of the AZERTY-NF layout is currently installed?](#upgrade)
+- [How-to update to a new version of the AZERTY-NF layout?](#upgrade)
 
 
 
